@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yash_Notes-App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="notes__container">
+      <div class="notes__containerLeft">
+        <div class="notes__leftHead">
+          <p>Notes</p>
+          <img src="img/plus.png" alt="plus" id="addNotes" />
+        </div>
+        <div class="notes__leftNotes" id="notesContainer"></div>
+      </div>
+      <div class="notes__containerRight">
+        <textarea
+          id="notesInput"
+          class="notes__rightText"
+          disabled
+          placeholder="Click add button to start writing notes"
+        ></textarea>
+        <button class="notes__rightBtn" id="submit" disabled>Save</button>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

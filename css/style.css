@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.notes__container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.notes__containerLeft {
+  flex: 0.23;
+  background-color: #2F3235;
+  color: #fff;
+  padding: 10px;
+}
+.notes__leftHead {
+  display: flex;
+  justify-content: space-between;
+}
+.notes__leftHead p {
+  font-size: 0.9rem;
+  font-style: normal;
+  text-transform: uppercase;
+}
+#addNotes {
+  height: 20px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+.notes__leftNotes {
+  margin-top: 11px;
+}
+.notes__leftNote {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0rem;
+  border-bottom: 0.5px solid #fff;
+}
+.notes__leftNote > p {
+  font-style: normal;
+  font-size: 0.9rem;
+}
+.notes__leftNote > div {
+  padding: 2px 6.5px;
+  cursor: pointer;
+}
+.delete__btn {
+  height: 14px;
+  pointer-events: none;
+}
+.notes__containerRight {
+  flex: 0.77;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+.notes__rightText {
+  width: 100%;
+  height: 50%;
+  border: none;
+  background-color:#E7E5E5;
+  padding: 14px;
+  outline: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+.notes__rightBtn {
+  background-color: #3ad4cb;
+  width: 160px;
+  height: 40px;
+  margin-top: 19px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 400;
+  display: block;
+  margin-left: auto;
+  border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+  .notes__containerLeft {
+    flex: 3;
+  }
+  .notes__containerRight {
+    flex: 7;
+  }
+}
+@media (max-width: 500px) {
+  .notes__container {
+    flex-direction: column;
+  }
+  .notes__containerLeft {
+    flex: 3;
+  }
+  .notes__containerRight {
+    flex: 7;
+  }
+  .notes__containerLeft {
+    flex: 1;
+  }
+  .notes__containerRight {
+    flex: 9;
+  }
+}
